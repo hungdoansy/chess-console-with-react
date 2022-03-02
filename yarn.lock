@@ -2546,6 +2546,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
+bootstrap-show-modal@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/bootstrap-show-modal/-/bootstrap-show-modal-1.4.4.tgz#2ced39c4af63fcde2b810020026227d19a2e9c22"
+  integrity sha512-nW19y85DfAX/u5yuWtWlV6a5TXeNcthYMLz1sTn61PS8JuG1FFcPC8Iqu2DQ22QQsf/eE6vlhpNJGF9T/zN9ig==
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -2726,6 +2731,24 @@ check-types@^11.1.1:
   resolved "https://registry.yarnpkg.com/check-types/-/check-types-11.1.2.tgz#86a7c12bf5539f6324eb0e70ca8896c0e38f3e2f"
   integrity sha512-tzWzvgePgLORb9/3a0YenggReLKAIb2owL03H2Xdoe5pKcUyWRSEQ8xfCar8t2SIAuEDwtmx2da1YB52YuHQMQ==
 
+chess-console@4.12.3:
+  version "4.12.3"
+  resolved "https://registry.yarnpkg.com/chess-console/-/chess-console-4.12.3.tgz#1e5c3c46b20e7e83611c2b4ea075f1da4c219aa5"
+  integrity sha512-lIbHA+j434hiuO7jsKSdiUhMM69nh6btSOkY/SGQxYEuIEdmA60tEaS36Gi09pk/eswcrmsN6OrEhZ3bOTR9RQ==
+  dependencies:
+    bootstrap-show-modal "^1.4.4"
+    chess.mjs "^1.2.0"
+    cm-chess "^2.1.8"
+    cm-chessboard "^3.16.7"
+    cm-pgn "^2.1.8"
+    cm-web-modules "^1.16.0"
+    modrator "^1.2.1"
+
+chess.mjs@^1.1.1, chess.mjs@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/chess.mjs/-/chess.mjs-1.2.0.tgz#d317bbe339b30d688e03129f9ba40c43d36b2088"
+  integrity sha512-6WLXJ0RHJSn/VjCVAOE6N8mTNXChjrN+xOTOKnpF+v94eCULyRd5KfRNLvxxmxKKxCkck9VsquPirLT0nxH4og==
+
 chokidar@^3.4.2, chokidar@^3.5.2:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
@@ -2776,6 +2799,33 @@ cliui@^7.0.2:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
     wrap-ansi "^7.0.0"
+
+cm-chess@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/cm-chess/-/cm-chess-2.1.8.tgz#87c5a2301f0f6abd6016536b1e4d4f32664f1c49"
+  integrity sha512-FIYNeNNqWsrZif8GVizUohqg7l9pWnUQ1ZrWnecUY27SCCKau4LPJrumogPLFoPbNNsRl1TSo1JQ8tUpkp/MOQ==
+  dependencies:
+    chess.mjs "^1.1.1"
+    cm-pgn "^2.1.4"
+    modrator "^1.1.6"
+
+cm-chessboard@^3.16.7:
+  version "3.16.8"
+  resolved "https://registry.yarnpkg.com/cm-chessboard/-/cm-chessboard-3.16.8.tgz#88f3a197a774110740b79b59b1815740c741804b"
+  integrity sha512-PJMxZzZrKG2+9LJ/StUrXtl+t15gmgdAZIUY/73Rc8gCKBtEO8i4+8FX8wlpMu5eGT9cJFQqTvmoijpKPpTQ/g==
+
+cm-pgn@^2.1.4, cm-pgn@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/cm-pgn/-/cm-pgn-2.1.8.tgz#3695a63796d9680dc2c073eb93693fcdc5f58d4e"
+  integrity sha512-aAhw8KIg4OBpoVANP5O41PcrhskN0AsSEQiLx7MSIoBbjninqJAtsM6RoKbiUYr+pDe9UvuzUyPOz2OTqjAM5Q==
+  dependencies:
+    chess.mjs "^1.2.0"
+    modrator "^1.2.0"
+
+cm-web-modules@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/cm-web-modules/-/cm-web-modules-1.16.0.tgz#7c00fb15162b6058e55fd8165d38d8b7d6687a57"
+  integrity sha512-gjVDDCaZPkSl6va5oqdVgfD3S27TXE/AfpPjn4n7LW2SrKL0hfnZUGe9gNg31BwbzY4ENznCROUY7It3DQtpPA==
 
 co@^4.6.0:
   version "4.6.0"
@@ -5786,6 +5836,11 @@ mkdirp@^0.5.5, mkdirp@~0.5.1:
   integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   dependencies:
     minimist "^1.2.5"
+
+modrator@^1.1.6, modrator@^1.2.0, modrator@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/modrator/-/modrator-1.2.1.tgz#e89fcc51fd449608e30164a01812fdc724aa763e"
+  integrity sha512-c9Fmc6jYd0oD7xVmVQW3z/K26t/PY3nmaSjYJ4K3l+4o5dzfm0IfDqsCz7evEex70wbz/oj5AINYLI6ufFpFWQ==
 
 ms@2.0.0:
   version "2.0.0"
